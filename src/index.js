@@ -1,2 +1,5 @@
 import "./styles.css"
-console.log("Hey!");
+import { createTodo } from "./createTodo.js";
+
+let lawn = createTodo("Water lawn");
+console.log()

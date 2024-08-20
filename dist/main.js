@@ -110,13 +110,23 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
 
 /***/ }),
 
+/***/ "./src/createTodo.js":
+/*!***************************!*\
+  !*** ./src/createTodo.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   createTodo: () => (/* binding */ createTodo)\n/* harmony export */ });\nfunction createTodo(thisTitle) {\n    const title = thisTitle;\n    const desc = \"\";\n    const dueDate = \"\";\n    const priority = 0;\n    console.log(\"To-do item created!\");\n    return {title, desc, dueDate, priority};\n    \n}\n\n\n\n//# sourceURL=webpack://todo-list/./src/createTodo.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n\nconsole.log(\"Hey!\");\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _createTodo_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createTodo.js */ \"./src/createTodo.js\");\n\n\n\nlet lawn = (0,_createTodo_js__WEBPACK_IMPORTED_MODULE_1__.createTodo)(\"Water lawn\");\nconsole.log(lawn.title);\nconsole.log(\"yo!\");\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
 
 /***/ })
 
