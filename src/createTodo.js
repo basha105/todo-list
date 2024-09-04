@@ -1,10 +1,16 @@
-function createTodo(thisTitle) {
+function createTodo(thisTitle) { // This is merely creating a Todo ITEM! not a list
     const title = thisTitle;
-    const desc = "";
-    const dueDate = "";
+    let desc = "No description yet.";
+    const dueDate = "January 1, 2025";
     const priority = 0;
-    console.log("To-do item created!");
-    return {title, desc, dueDate, priority};
+    let checked = false;
+
+    const getDesc = () => desc;
+    const setDesc = (newDesc) => desc = newDesc;
+    const getDueDate = () => dueDate;
+    const getPriority = () => priority;
+    const getStatus = () => checked;
+    return {title, getDesc, setDesc, getDueDate, getPriority, getStatus};
     
 }
 

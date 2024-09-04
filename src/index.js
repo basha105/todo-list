@@ -1,5 +1,12 @@
 import "./styles.css"
 import { createTodo } from "./createTodo.js";
+import { createList } from "./createList.js";
 
-let lawn = createTodo("Water lawn");
-console.log()
+let defaultList = createList("default");
+
+let waterLawn = createTodo("lawn");
+
+defaultList.addItem(waterLawn);
+
+
+
