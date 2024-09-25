@@ -1,4 +1,5 @@
-export default function createListDisplay(currentList) {
+function createListDisplay(currentList) {
+
     const listContainer = document.createElement("div");
     const header = document.createElement("h1");
     header.textContent = `${currentList.title}`;
@@ -16,3 +17,5 @@ export default function createListDisplay(currentList) {
     listContainer.appendChild(list);
     return listContainer;
 }
+
+export { createListDisplay };

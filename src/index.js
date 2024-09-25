@@ -9,9 +9,11 @@ let defaultList = createList("default");
 let washDishes = createTodo("Wash the dishes");
 defaultList.addItem(washDishes);
 
+let throwGarbage = createTodo("Throw the garbage");
+defaultList.addItem(throwGarbage);
+
 let defaultDisplay = createListDisplay(defaultList);
 listContainer.appendChild(defaultDisplay);
-
 
 
 
