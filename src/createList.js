@@ -28,7 +28,10 @@ function createList(myTitle) {
 
     const getListLength = () => listLength;
 
+
+
     return {title, addItem, removeItem, getList, displayItems, getListLength}
+
 }
 
 export { createList };

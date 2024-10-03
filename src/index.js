@@ -4,18 +4,18 @@ import { createList } from "./createList.js";
 import { createListDisplay } from "./createListDisplay.js"
 
 const listContainer = document.getElementById("listDisplay");
-let defaultList = createList("default");
-
-let washDishes = createTodo("Wash the dishes");
-defaultList.addItem(washDishes);
-
-let throwGarbage = createTodo("Throw the garbage");
-defaultList.addItem(throwGarbage);
-
-let defaultDisplay = createListDisplay(defaultList);
-listContainer.appendChild(defaultDisplay);
 
 
-
-
+const createButton = document.getElementById("newList");
+createButton.addEventListener("click", function() {
+    let newListTitle = prompt("Please enter a title for your list.");
+    if (newListTitle) {
+        let newList = createList(newListTitle);
+        let newListDisplay = createListDisplay(newList);
+        listContainer.appendChild(newListDisplay);
+    }
+    else {
+        console.log("You didn't enter a title");
+    }
+})
 
