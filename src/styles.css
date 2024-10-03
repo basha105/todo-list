@@ -1,3 +1,18 @@
 body {
     background-color: lightblue;
+    display: flex;
+    flex-direction: row;
 }
+
+#navigationDisplay {
+    border: 1px solid blue;
+}
+
+#listDisplay {
+    border: 1px solid green;
+}
+
+.listContainer {
+    border: 2px solid black;
+}
+

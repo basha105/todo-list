@@ -15,6 +15,9 @@ function createListDisplay(currentList) {
     // Make an html list of items, with each item's text content being the title of the todo item
 
     listContainer.appendChild(list);
+    listContainer.style.width = "225px";
+    listContainer.style.height = "300px";
+    listContainer.classList.add("listContainer");
     return listContainer;
 }
 
