@@ -15,9 +15,9 @@ createButton.addEventListener("click", function() {
         let newListDisplay = createListDisplay(newList);
         listContainer.appendChild(newListDisplay);
 
-        let newListNav = document.createElement("div");
-        newListNav.textContent = newListTitle;
-        navigationContainer.appendChild(newListNav);
+        let newListButton = document.createElement("button");
+        newListButton.textContent = newListTitle;
+        navigationContainer.appendChild(newListButton);
 
     }
     else {
