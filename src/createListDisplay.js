@@ -5,6 +5,8 @@ function createListDisplay(currentList) {
     header.textContent = `${currentList.title}`;
     listContainer.appendChild(header);
 
+
+
     const list = document.createElement("ul");
     for (let i=0; i<currentList.getListLength(); i++) {
         let newListItem = document.createElement("li");
@@ -12,7 +14,7 @@ function createListDisplay(currentList) {
         list.appendChild(newListItem);
     }
 
-    // Make an html list of items, with each item's text content being the title of the todo item
+    // Make an html list of items, with each item's textcontent being the title of the todo item
 
     listContainer.appendChild(list);
     listContainer.style.width = "225px";

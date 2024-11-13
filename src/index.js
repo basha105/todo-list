@@ -13,11 +13,27 @@ createButton.addEventListener("click", function() {
     if (newListTitle) {
         let newList = createList(newListTitle);
         let newListDisplay = createListDisplay(newList);
-        listContainer.appendChild(newListDisplay);
 
-        let newListButton = document.createElement("button");
-        newListButton.textContent = newListTitle;
-        navigationContainer.appendChild(newListButton);
+        let addItemButton = document.createElement("button");
+        addItemButton.textContent = "Add Todo";
+        addItemButton.addEventListener("click", function() {
+            let newTodoTitle = prompt("Please enter your Todo's name.");
+            newList.addItem(newTodoTitle);
+
+            let newerDisplay = createListDisplay(newList);
+            listContainer.removeChild(newListDisplay);
+            listContainer.appendChild(newerDisplay);
+
+
+        })
+
+
+        newListDisplay.appendChild(addItemButton);
+        listContainer.appendChild(newListDisplay);
+        
+
+
+
 
     }
     else {
